@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Мои финансы</string>
+
+    <string name="cat_food">Питание</string>
+    <string name="cat_clothes">Одежда</string>
+    <string name="cat_acces">Аксессуары</string>
+    <string name="cat_electr">Электроника</string>
+    <string name="cat_entertainment">Развлечения</string>
+    <string name="cat_beautyandhealth">Красота и здоровье</string>
+    <string name="cat_house">Дом</string>
+    <string name="cat_transport">Транспорт</string>
+    <string name="cat_notselect">Не выбрано</string>
+
+    <string name="cat_salary">Зарплата</string>
+    <string name="cat_scholarship">Стипендия</string>
+    <string name="cat_prize">Премия</string>
+    <string name="cat_underworking">Подработка</string>
+
+    <string name="title_home">Главная</string>
+    <string name="title_dashboard">Отчеты</string>
+    <string name="title_notifications">Список</string>
+    <string name="text_about_app">Приложение \"Мои финансы\" \nДипломный проект студента \nУЦКО \"Турбо\" \nГруппы АП31 \nДемченко А.В. \nМайкоп, 2019 г.\n</string>
+
+    <string-array name="array_cat_options_expenses">
+        <item>@string/cat_notselect</item>
+        <item>@string/cat_food</item>
+        <item>@string/cat_clothes</item>
+        <item>@string/cat_acces</item>
+        <item>@string/cat_electr</item>
+        <item>@string/cat_entertainment</item>
+        <item>@string/cat_beautyandhealth</item>
+        <item>@string/cat_house</item>
+        <item>@string/cat_transport</item>
+    </string-array>
+
+    <string-array name="array_cat_options_income">
+        <item>@string/cat_notselect</item>
+        <item>@string/cat_salary</item>
+        <item>@string/cat_scholarship</item>
+        <item>@string/cat_prize</item>
+        <item>@string/cat_underworking</item>
+    </string-array>
+    >
+</resources>

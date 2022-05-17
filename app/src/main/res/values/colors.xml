@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#477074</color>
+    <color name="colorPrimaryDark">#1A2735</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="text">#008000</color>
+    <color name="row1_bg">#eef2f8</color>
+    <color name="row2_bg">#ffffff</color>
+    <color name ="line_dark">#4d5c65</color>
+    <color name="rowCur_bg">#02fbff</color>
+    <color name="white">#fff</color>
+    <color name="green">#00a550</color>
+    <color name="darkgreen">#036935</color>
+    <color name="blue">#20214f</color>
+    <color name="red">#FD0926</color>
+    <color name="bluecateg">#282bb5</color>
+    <color name="tabTextColor">#20214f</color>
+    <color name="tabIndicatorColor">#03ae3c</color>
+    <color name="colorEdgeEffect">#56AED6</color>
+    <color name="colorTabBackground">#008577</color>
+    <color name="colorPrimaryFragment">#008577</color>
+    <color name="colorEdit">#A1F5EA</color>
+    <color name="colorViewSeparator">#B2B4B4</color>
+    <color name="actionButton">#F57C00</color>
+    <color name="numberButton">#455A64</color>
+    <color name="black">#000000</color>
+    <color name="colorview">#DBD9D9</color>
+</resources>

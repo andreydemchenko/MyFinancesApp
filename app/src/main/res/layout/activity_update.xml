@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".update">
+
+    <TextView
+        android:id="@+id/tvSumUpdate"
+        android:layout_width="113dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Сумма:"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edSumUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/tvSumUpdate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCatUpdate"
+        android:layout_width="112dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Категория:"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSumUpdate" />
+
+    <TextView
+        android:id="@+id/tvNameUpdate"
+        android:layout_width="112dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Название:"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCatUpdate" />
+
+    <EditText
+        android:id="@+id/edNameUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/tvNameUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerUpdate" />
+
+    <TextView
+        android:id="@+id/tvDateUpdate"
+        android:layout_width="114dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Дата:"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvNameUpdate" />
+
+    <Button
+        android:id="@+id/btnUpdateUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:text="Сохранить"
+        android:textColor="@color/white"
+        android:background="@drawable/roundedbutton"
+        android:onClick= "onClickUpdate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerUpdate"
+        android:layout_width="214dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/tvCatUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/edSumUpdate" />
+
+    <Button
+        android:id="@+id/btnCancelUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick= "onClickUpdate"
+        android:text="Отмена"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDateSetUpdate"
+        android:layout_width="207dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:onClick="onClickDate"
+        android:text="TextView"
+        android:textColor="@color/blue"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/tvDateUpdate"
+        app:layout_constraintTop_toBottomOf="@+id/edNameUpdate" />
+
+    <Button
+        android:id="@+id/btnDeleteUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:background="@drawable/roundedbutton"
+        android:onClick="onClickUpdate"
+        android:text="Удалить"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnUpdateUpdate"
+        app:layout_constraintStart_toEndOf="@+id/btnCancelUpdate" />
+
+    <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adViewUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6867795034199673/4801633564"
+        ads:layout_constraintBottom_toTopOf="@+id/btnDeleteUpdate"
+        ads:layout_constraintEnd_toEndOf="parent"
+        ads:layout_constraintHorizontal_bias="0.506"
+        ads:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+
+</android.support.constraint.ConstraintLayout>
